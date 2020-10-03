@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+
+    <!--CSS -->
+
+    <!-- https://necolas.github.io/normalize.css/
+    Normalize.css makes browsers render all elements more consistently and in line with modern standards.
+    It precisely targets only the styles that need normalizing. -->
+    <link rel="stylesheet" type="text/css" href="cssnormalize/normalize.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" type="text/css" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
+
+    <!-- custom style -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@300&family=Recursive:wght@600&display=swap" rel="stylesheet">
+    <!-- portfolio grid google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+	 
+	 <!-- icon --> 
+	 <link rel="icon" href="img/cmd.png" >
+
+
+    <title>William Corr Bsc Computing Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <!-- Logo -->
+      <div class="logo" id="logo">
+        <img src="img/cmd.png
+        " alt=">_">
+      </div>
+      <!-- Toggle Nav Button -->
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <!-- Navigation Bar -->
+      <nav class="nav">
+        <ul class ="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+          <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        Hi I'm <strong>Will Corr</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">Computer Scientist</p>
+      <img src="img/willProfile.jpeg" alt="Will at EngSoc Sign up day" class="intro__img">
+    </section>
+
+    <!-- My Services -->
+    <section class="my-services" id="services">
+      <h2 class="section__title section__title--services">
+        My areas of interest
+      </h2>
+      <div class="services">
+        <!-- Software Development -->
+        <div class="service">
+          <h3>Software Design and Development</h3>
+          <p>Throughout four years of university, I have made many small practical applications. Interested in all kinds of software development, having a background mostly in Java and Python. I have enjoyed working in teams employing design principles of the software development life cycle to create larger applications. The research component to software development is intriguing to me, trying to find newer and faster ways to implement solutions is always exciting.
+</p></div><!-- end service div -->
+        <!-- Web Development -->
+        <div class="service">
+          <h3>Web Design and Development</h3>
+          <p>Web design and programming for the web are a great challenge. I enjoy the constantly changing landscape of web design and development. My background in this area is in creating client/server applications in PHP to utilizing frameworks such as Symfony. The area of web programming that interests me the most is Python Flask when combined with cloud services such as Google App Engine and Amazon AWS. Currently building RESTful web services in Python.</p>
+        </div><!-- end service div -->
+        <!-- Game and Simulation Design -->
+        <div class="service">
+          <h3>Game and Simulation Development</h3>
+          <p>Interactive multimedia and game design has always been a personal passion of mine. University work in this area was group work that followed producing a game design document and implementing that design in Unity. Having some experience with the Unreal engine, the Unity framework was chosen for familiarity in later  projects and for its high interoperability with the windows operating system. Currently I am researching and designing games intended toward people with disabilities.</p>
+        </div> <!-- end service div -->
+
+      </div> <!-- services div -->
+
+      <a href="#work" class="btn">My Work</a>
+    </section>
+
+    <!-- About Me -->
+
+    <section class="about-me" id="about">
+      <h2 class="section__title section__title--about">$ whoami</h2>
+      <p class="section__subtitle section__subtitle--about">Computer Science Graduate</p>
+
+      <div class="about--me__body">
+        <p>I'm a recent graduate of computer science with a passion for new technology, earning first class honours, I believe this was due to hard work, patience and organisation. Since graduating I have began to pursue a Masters in Artificial Intelligence.
+          Personally I love projects, particularly the design and research involved in implementation. I look forward to collaborating and building new iterations of projects in the future.
+          </p>
+      </div>
+
+      <img src="img/willProfile1.jpeg" alt="Will at EngSoc open day" class ="about-me__img">
+    </section>
+
+    <!-- My work -->
+    <section class="my-work" id="work">
+      <h2 class="section__title section__title--work">My work</h2>
+
+      <p class="section__subtitle section__subtitle--work">A selection of work</p>
+
+
+
+      <div class="portfolio">
+        <!-- portfolio item 1: Ar Bike Machine Learning -->
+
+        <a href="portfolio_arbike.html" class="portfolio__item">
+        <figure>
+          <figcaption>
+            <img src="img/portfolio/resized_arbikevisor_portfolio.png" class="portfolio__img" alt="">
+          <p>ML/AR Bicycle Safety Application</p>
+          </figcaption>
+      </figure>
+
+
+
+        <!-- portfolio item 2: VR bike arduino-->
+        <a href="portfolio_vrbike.html" class="portfolio__item">
+        <figure>
+          <figcaption>
+            <img src="img/portfolio/resized_vrbike_portfolio.png" alt="" class="portfolio__img">
+          <p>VR Cycling Simulation Experience</p>
+          </figcaption>
+      </figure>
+
+        <!-- portfolio item 3: Web Design-->
+        <a href="portfolio_webdesign.html" class="portfolio__item">
+        <figure>
+          <figcaption>
+            <img src="img/portfolio/webdesign_portfolio.png" alt="" class="portfolio__img">
+          <p>Web Design & Development</p>
+          </figcaption>
+      </figure>
+
+        <!-- portfolio item 4: Programming-->
+        <a href="portfolio_programming.html" class="portfolio__item_prog">
+        <figure>
+          <figcaption>
+            <img src="img/portfolio/resized_programming_portfolio.jpg" alt="" class="portfolio__img">
+           <p class="pdark">Software Design & Development</p>
+          </figcaption>
+        </figure>
+
+        <!-- portfolio item 5: Data Analytics-->
+        <a href="portfolio_datascience.html" class="portfolio__item">
+        <figure>
+          <figcaption>
+            <img src="img/portfolio/resized_wordcloud_portfolio.png" alt="" class="portfolio__img">
+          <p>Data Mining & Analysis</p>
+          </figcaption>
+        </figure>
+
+        <!-- portfolio item 4: VR procedural Mapping-->
+        <a href="portfolio_compintel.html" class="portfolio__item">
+        <figure>
+          <figcaption>
+            <img src="img/portfolio/resized_compintel_portfolio.png" alt="" class="portfolio__img">
+          <p>A.I & Machine-Learning </p>
+          </figcaption>
+        </figure>
+
+        <!-- portfolio item 6: Computational Intelligence -->
+        <a href="portfolio_electronics.html" class="portfolio__item">
+        <figure>
+          <figcaption>
+            <img src="img/portfolio/resized_arduino_portfolio.jpg" alt="" class="portfolio__img">
+          <p>Electronics</p>
+          </figcaption>
+        </figure>
+
+        <!-- 7 -->
+        <a href="portfolio_3dArt.html" class="portfolio__item">
+        <figure>
+          <figcaption>
+            <img src="img/portfolio/resized_3dmodeling_portfolio.png" alt="" class="portfolio__img">
+          <p>Simulations</p>
+          </figcaption>
+        </figure>
+
+      </div>
+
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+
+      <a href="mailto:corrwill0@gmail.com?subject=feedback">email me</a>
+    <!-- social list -->
+      <ul class="social-list">
+        <li class="social-list__item"><a class="social-list__link" href="https://www.linkedin.com/in/will-corr-60414a1b3/"><i class="fab fa-linkedin"></i></a></li>
+        <li class="social-list__item"><a class="social-list__link" href="https://github.com/WilliamCorr"><i class="fab fa-github"></i></a></li>
+        <li class="social-list__item"><a class="social-list__link" href="https://www.twitter.com"><i class="fab fa-twitter-square"></i></a></li>
+        <li class="social-list__item"><a class="social-list__link" href="https://www.hackerrank.com/corrwill0"><i class="fab fa-hackerrank"></i></a></li>
+      </ul>
+
+    </footer>
+
+    <!-- javascript -->
+     <script src="js/index.js">
+
+     </script>
+
+
+  </body>
+</html>

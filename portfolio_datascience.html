@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+
+    <!--CSS -->
+
+    <!-- https://necolas.github.io/normalize.css/
+    Normalize.css makes browsers render all elements more consistently and in line with modern standards.
+    It precisely targets only the styles that need normalizing. -->
+    <link rel="stylesheet" type="text/css" href="cssnormalize/normalize.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" type="text/css" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
+
+    <!-- custom style -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@300&family=Recursive:wght@600&display=swap" rel="stylesheet">
+
+
+    <title>William Corr Bsc Computing Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <!-- Logo -->
+      <div class="logo">
+        <img src="img/cmd.png
+        " alt=">_">
+      </div>
+      <!-- Toggle Nav Button -->
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <!-- Navigation Bar -->
+      <nav class="nav">
+        <ul class ="nav__list">
+          <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
+          <li class="nav__item"><a href="index.html#about" class="nav__link">About Me</a></li>
+          <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+        </ul>
+      </nav>
+    </header>
+
+   <section class="intro" id="home">
+     <h1 class="section__title section__title--intro">
+       Data <strong>Mining & Analysis</strong>
+     </h1>
+     <p class="section__subtitle section__subtitle--intro">. . .</p>
+     <img src="img/portfolio/datascience/heartdisease.jpeg" alt="Portfolio item image" class="intro__img">
+   </section>
+
+   <div class="portfolio-item-individual">
+     <p>
+      My experience with data science topics is primarily in Python and R with some small experience of Rapid Miner.
+      Rapid miner being optional and python was an elective, I chose python given the opportunity for more programming.
+      Completing information retrieval/web scraping in Python, using the CRISP-DM method of information processing.
+      I chose a topic of Cardiovascular disease in a medium-sized dataset. After cleaning the data, the right topics were chosen as predictors for machine learning algorithms such as Naïve Bayes and Decision Trees.
+      I really enjoyed this project a lot and the research on topics presented in the data.
+      Understanding the data was also key to finding the right predictors.
+      The machine learning algorithms were also susceptible to the type of information that was being processed as good predictors.
+
+     </p>
+     <img id="myImg1" src="img/portfolio/datasanalytics_portfolio.PNG" alt="data analytics project" class="portfolio_img--individual">
+     <!-- The Modal -->
+     <div id="myModal1" class="modal1">
+       <!-- Close button -->
+          <span class="close1">&times;</span>
+          <!-- Modal content -->
+          <img class="modal-content1" id="img011">
+          <div id="caption1"></div>
+
+          </div>
+
+     <p>
+       Similar projects in the area that I have completed are in the area of Text Analysis.
+       For this, I scraped different communities on Reddit and processed the wording using natural language processing techniques and regular expressions to find terms that were good predictors for machine learning algorithms.
+       The text was processed using many of the steps involved in natural language processing, having previously completed a module in this area where a part-of-speech tagger and parse tree generator was created in Python.
+       For this project, the python NLTK library was widely used for tokenizing and parsing of text.
+     </p>
+     <img src="img/portfolio/datascience/parser.jpeg" alt="data analytics project" class="portfolio_img--individual">
+
+     <p>
+       My experience with R was an elective project modelling data using the R programming language.
+       This project in statistics was a group effort but we all had a good understanding of R after a short time.
+       It is a very efficient language, we decided to look at a dataset provided by NASA for meteor data and model it, the ability to display large data in R is very effective.
+
+     </p>
+     <img src="img/portfolio/datascience/world_map.PNG" alt="data analytics project" class="portfolio_img--individual">
+
+
+
+
+   </div>
+
+
+
+    <!-- footer -->
+    <footer class="footer">
+
+     <a href="mailto:corrwill0@gmail.com?subject=feedback">email me</a>
+    <!-- social list -->
+      <ul class="social-list">
+        <li class="social-list__item"><a class="social-list__link" href="https://www.linkedin.com/in/will-corr-60414a1b3/"><i class="fab fa-linkedin"></i></a></li>
+        <li class="social-list__item"><a class="social-list__link" href="https://github.com/WilliamCorr"><i class="fab fa-github"></i></a></li>
+        <li class="social-list__item"><a class="social-list__link" href="https://www.twitter.com"><i class="fab fa-twitter-square"></i></a></li>
+        <li class="social-list__item"><a class="social-list__link" href="https://www.hackerrank.com/corrwill0"><i class="fab fa-hackerrank"></i></a></li>
+      </ul>
+
+    </footer>
+
+   <!-- javascript -->
+     <script src="js/index.js">
+
+     </script>
+
+
+  </body>
+</html>

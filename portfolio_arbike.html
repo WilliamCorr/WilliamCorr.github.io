@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+
+    <!--CSS -->
+
+    <!-- https://necolas.github.io/normalize.css/
+    Normalize.css makes browsers render all elements more consistently and in line with modern standards.
+    It precisely targets only the styles that need normalizing. -->
+    <link rel="stylesheet" type="text/css" href="cssnormalize/normalize.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" type="text/css" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
+
+    <!-- custom style -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@300&family=Recursive:wght@600&display=swap" rel="stylesheet">
+
+
+    <title>William Corr Bsc Computing Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <!-- Logo -->
+      <div class="logo">
+        <img src="img/cmd.png
+        " alt=">_">
+      </div>
+      <!-- Toggle Nav Button -->
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <!-- Navigation Bar -->
+      <nav class="nav">
+        <ul class ="nav__list">
+          <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
+          <li class="nav__item"><a href="index.html#about" class="nav__link">About Me</a></li>
+          <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+        </ul>
+      </nav>
+    </header>
+
+   <section class="intro" id="home">
+     <h1 class="section__title section__title--intro">
+       Augmented Reality <strong></strong>
+     </h1>
+     <p class="section__subtitle section__subtitle--intro">A Machine Learning IoT Bicycle Safety Project</p>
+     <img src="img/portfolio/arbike/arbike_title2.jpg" alt="Portfolio item image" class="intro__img">
+   </section>
+
+   <div class="portfolio-item-individual">
+     <p>
+       This was a university project that lasted one year. As an individual project, the research and design required succinct sprints that built each area of the project.
+       The research was in safety in cycling, road safety for both cyclists and other road users. The key areas were lack of visibility of cyclists with other road users and lack of awareness from the cyclist's perception.
+       The conception of a solution to these issues was a smart bicycle, more particularly a smart helmet to go along with it.
+       I wanted the design to be small and almost embeddable into the bicycle itself so I chose to use a combination of Arduino, RaspberryPi, and Android to run the platform on.
+     </p>
+     <!-- Modal image -->
+     <img id="myImg" src="img/portfolio/arbike/visual_guide.PNG" alt="ar bike visual guide" class="portfolio_img--individual">
+     <!-- The Modal -->
+     <div id="myModal" class="modal">
+       <!-- Close button -->
+          <span class="close">&times;</span>
+          <!-- Modal content -->
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+
+          </div>
+
+     <p>
+       The smart aspect of the bicycle was to detect vehicles using OpenCV and machine learning libraries such as TensorFlow and Keras.
+       Once vehicles were detected by the camera the Pi would pass Websocket datagrams to the Android device running Unity and the Arduino running the programmable LED strip fastened to the exterior of the bicycle.
+       Learning how to build a dataset, train the dataset and running detection scripts was a very interesting exploration in neural networks.
+       Updating the user that a vehicle was approaching from behind with an Optical-See-Thru-Display made with an android device.
+       Simultaneously the vehicles would be alerted to the bicycle's presence by a sequence of programmed LEDs triggered by WebSockets on the bicycle's exterior.
+     </p>
+     <img id="myImg1" src="img/portfolio/arbike/arbike_OSTD.jpeg" alt="ar bike OSTD project" class="portfolio_img--individual">
+     <!-- The Modal -->
+     <div id="myModal1" class="modal1">
+       <!-- Close button -->
+          <span class="close1">&times;</span>
+          <!-- Modal content -->
+          <img class="modal-content1" id="img011">
+          <div id="caption1"></div>
+
+          </div>
+     <p>
+       The visual outline for the project was conceived of using dual cameras on front and rear.
+       One of the dangerous behaviours associated with cycling was the use of mobile phones and devices with headphones.
+       The solution is an attempt to eliminate this potential danger by embedding voice-controlled applications into the helmet itself.
+       This was conceived in the python library pocket sphinx but implemented in Google voice assist Unity plugin.
+       The OSTD was implemented by reversing the icons and text in Unity and reflecting the display on clear glass to the user.
+       This was to be housed in a 3D printed cradle attached to the helmet (access to printers was not available due to Covid19)
+
+       The aim of this project was to improve the safety environment of cyclists.
+       The final prototype of the design was well received, I learned a lot about machine learning and felt good about the intention of the project as being something to help people's well being.
+
+
+     </p>
+
+
+
+
+
+
+
+
+    <!-- footer -->
+    <footer class="footer">
+
+     <a href="mailto:corrwill0@gmail.com?subject=feedback">email me</a>
+    <!-- social list -->
+      <ul class="social-list">
+        <li class="social-list__item"><a class="social-list__link" href="https://www.linkedin.com/in/will-corr-60414a1b3/"><i class="fab fa-linkedin"></i></a></li>
+        <li class="social-list__item"><a class="social-list__link" href="https://github.com/WilliamCorr"><i class="fab fa-github"></i></a></li>
+        <li class="social-list__item"><a class="social-list__link" href="https://www.twitter.com"><i class="fab fa-twitter-square"></i></a></li>
+        <li class="social-list__item"><a class="social-list__link" href="https://www.hackerrank.com/corrwill0"><i class="fab fa-hackerrank"></i></a></li>
+      </ul>
+
+    </footer>
+
+   <!-- javascript -->
+     <script src="js/index.js">
+
+     </script>
+     <script src="js/modal.js">
+
+     </script>
+
+
+  </body>
+</html>
